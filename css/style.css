@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Julee&display=swap");
+
+/* || RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* || FONTS */
+  --FF-STYLE: "Julee", "Helvetica";
+  --FF: "Fredoka One", "Helvetica";
+  --FS: 2.5rem;
+
+  /* || COLORS */
+  --BGCOLOR-FADE: rgb(48, 48, 48);
+  --BGCOLOR: black;
+  --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+  --FONT-COLOR: whitesmoke;
+}
+
+/* || GENERAL STYLES */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* || HERO */
+.header {
+  background-color: rgb(46, 0, 0);
+}
+.hero {
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+  background-image: var(--BGIMAGE);
+  color: var(--FONT-COLOR);
+}
+
+.hero__h1 {
+  padding: 3%;
+  font-size: 2.5rem;
+  font-family: var(--FF);
+  color: brown;
+}
+
+.hero__h3 {
+  font-size: 2rem;
+  color: aqua;
+}
+
+.avatar {
+  max-width: 15%;
+  max-height: 15%;
+  margin: 5% 42.5%;
+}
+
+.hero__background {
+  min-width: 100%;
+}
+
+/* || ENTERANCE */
