@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Julee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;500&family=Roboto:wght@300;500&display=swap");
 
 /* || RESET */
 *,
@@ -26,15 +26,19 @@ textarea {
 
 :root {
   /* || FONTS */
-  --FF-STYLE: "Julee", "Helvetica";
-  --FF: "Fredoka One", "Helvetica";
+  --FF-Kanit: "Kanit", "sans-serif";
+  --FF-Roboto: "Roboto", "sans-serif";
   --FS: 2.5rem;
+  --FW-LIGHT: 200;
+  --FW-BOLD: 500;
 
   /* || COLORS */
-  --BGCOLOR-FADE: rgb(48, 48, 48);
-  --BGCOLOR: black;
-  --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+  --BGCOLOR-HERO: rgb(19, 18, 18);
+  --BGCOLOR-ENTERANCE: rgb(88, 44, 189);
   --FONT-COLOR: whitesmoke;
+
+  /* || TEXT PADDING */
+  --TEXT-PADDING: 0 30%;
 }
 
 /* || GENERAL STYLES */
@@ -43,37 +47,136 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--BGCOLOR-HERO);
+}
+
 /* || HERO */
 .header {
-  background-color: rgb(46, 0, 0);
+  background-color: var(--BGCOLOR-ENTERANCE);
+  margin: 1% 18%;
+  border-radius: 25px;
+  box-shadow: 0.1px 0.1px 5px whitesmoke;
 }
+
+.icon {
+  margin: 1%;
+}
+
 .hero {
-  font-family: var(--FF);
-  background-color: var(--BGCOLOR);
-  background-image: var(--BGIMAGE);
+  background-color: var(--BGCOLOR-HERO);
   color: var(--FONT-COLOR);
+  font-weight: var(--FW-BOLD);
 }
 
 .hero__h1 {
-  padding: 3%;
-  font-size: 2.5rem;
-  font-family: var(--FF);
-  color: brown;
+  padding-top: 4%;
+  padding-bottom: 1.5%;
+  font-size: 3.5rem;
+  font-family: var(--FF-Kanit);
+  color: var(--FONT-COLOR);
 }
 
 .hero__h3 {
-  font-size: 2rem;
-  color: aqua;
+  font-size: 1.5rem;
+  color: var(--FONT-COLOR);
+  padding: var(--TEXT-PADDING);
+  font-family: var(--FF-Roboto);
+  font-weight: var(--FW-LIGHT);
 }
 
 .avatar {
-  max-width: 15%;
-  max-height: 15%;
-  margin: 5% 42.5%;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 1% 42.5%;
 }
 
 .hero__background {
+  max-height: 300px;
   min-width: 100%;
 }
 
 /* || ENTERANCE */
+.enterance {
+  background-color: var(--BGCOLOR-ENTERANCE);
+  color: var(--FONT-COLOR);
+}
+
+.enterance__h2 {
+  padding: 4% 0 4% 0;
+  font-size: 2rem;
+  font-family: var(--FF-Kanit);
+}
+
+.about {
+  font-size: 1.4rem;
+  font-family: var(--FF-Roboto);
+  font-weight: var(--FW-LIGHT);
+  padding: 0 33.7%;
+  word-break: break-word;
+  line-height: 2rem;
+}
+
+.about_2 {
+  font-size: 1.4rem;
+  font-family: var(--FF-Roboto);
+  font-weight: var(--FW-LIGHT);
+  padding: 0 35.3% 4%;
+  word-break: break-word;
+  line-height: 2rem;
+}
+
+/* || INFO TABLES */
+.info__tables {
+  background-color: var(--BGCOLOR-ENTERANCE);
+}
+
+.row {
+  display: flex;
+}
+
+.space {
+  padding: 0 12%;
+}
+
+.column {
+  flex: 33%;
+  color: whitesmoke;
+  margin: 0 0 30px 0;
+  /* !!!! ONEMLI BURASI DEGISECEK 30 px silinecek */
+  padding-bottom: 30px;
+  font-family: var(--FF-Roboto);
+  font-size: 1.3rem;
+}
+
+.radius_first {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: var(--BGCOLOR-HERO);
+  margin-right: 1px;
+}
+
+.radius_second {
+  background-color: var(--BGCOLOR-HERO);
+  margin-right: 1px;
+}
+
+.radius_third {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--BGCOLOR-HERO);
+}
+
+/* || First Column */
+
+.background__circle {
+  background-color: rgb(195, 236, 12);
+  border-radius: 50%;
+  max-width: 100px;
+  margin: 50px 116px 30px;
+}
+
+.first_column__image {
+  width: 100px;
+  height: 100px;
+}
