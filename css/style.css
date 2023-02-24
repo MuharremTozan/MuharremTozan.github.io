@@ -88,7 +88,7 @@ body {
 .avatar {
   max-width: 200px;
   max-height: 200px;
-  margin: 1% 42.5%;
+  margin: 1% auto;
 }
 
 .hero__background {
@@ -112,18 +112,11 @@ body {
   font-size: 1.4rem;
   font-family: var(--FF-Roboto);
   font-weight: var(--FW-LIGHT);
-  padding: 0 33.7%;
-  word-break: break-word;
   line-height: 2rem;
 }
 
-.about_2 {
-  font-size: 1.4rem;
-  font-family: var(--FF-Roboto);
-  font-weight: var(--FW-LIGHT);
-  padding: 0 35.3% 4%;
-  word-break: break-word;
-  line-height: 2rem;
+.about_fourth {
+  padding-bottom: 4%;
 }
 
 /* || INFO TABLES */
@@ -173,7 +166,7 @@ body {
   background-color: rgb(195, 236, 12);
   border-radius: 50%;
   max-width: 100px;
-  margin: 50px 116px 30px;
+  margin: 10% auto;
 }
 
 .first_column__image {
