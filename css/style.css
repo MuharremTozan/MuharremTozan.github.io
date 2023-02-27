@@ -111,13 +111,13 @@ p {
 }
 
 .cauldron {
-  width: 270px;
-  height: 250px;
+  max-width: 270px;
+  max-height: 250px;
 }
 
 .cauldron-right {
-  width: 270px;
-  height: 250px;
+  max-width: 270px;
+  max-height: 250px;
 }
 .enterance {
   background-color: var(--BGCOLOR-ENTERANCE);
