@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  background-color: var(--BGCOLOR-HERO);
+  background-color: var(--BGCOLOR-ENTERANCE);
 }
 
 p {
@@ -56,8 +56,48 @@ p {
 }
 
 /* || HERO */
+.custom-shape-divider-top-1677525270 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1677525270 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 114px;
+}
+
+.custom-shape-divider-top-1677525270 .shape-fill {
+  fill: #582cbd;
+}
+
+.custom-shape-divider-bottom-1677525421 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1677525421 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 168px;
+}
+
+.custom-shape-divider-bottom-1677525421 .shape-fill {
+  fill: #582cbd;
+}
+
 .header {
-  background-color: var(--BGCOLOR-ENTERANCE);
+  background-color: var(--BGCOLOR-HERO);
   margin: 1% 18%;
   border-radius: 25px;
   box-shadow: 0.1px 0.1px 5px whitesmoke;
@@ -71,6 +111,7 @@ p {
   background-color: var(--BGCOLOR-HERO);
   color: var(--FONT-COLOR);
   font-weight: var(--FW-BOLD);
+  position: relative;
 }
 
 .hero__h1 {
