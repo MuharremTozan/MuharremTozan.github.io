@@ -93,15 +93,32 @@ p {
   max-width: 200px;
   max-height: 200px;
   margin: 2%;
-  display: inline;
+  display: inline-block;
 }
 
 .hero__background {
   max-height: 300px;
-  min-width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* || ENTERANCE */
+.image-h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cauldron {
+  width: 270px;
+  height: 250px;
+}
+
+.cauldron-right {
+  width: 270px;
+  height: 250px;
+}
 .enterance {
   background-color: var(--BGCOLOR-ENTERANCE);
   color: var(--FONT-COLOR);
@@ -111,6 +128,8 @@ p {
   padding: 4% 0 4% 0;
   font-size: 2rem;
   font-family: var(--FF-Kanit);
+  display: inline-block;
+  padding-top: 100px;
 }
 
 .about {
@@ -157,12 +176,14 @@ p {
 .radius_second {
   background-color: var(--BGCOLOR-HERO);
   margin-right: 1px;
+  padding: 100px;
 }
 
 .radius_third {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: var(--BGCOLOR-HERO);
+  padding: 100px;
 }
 
 /* || First Column */
