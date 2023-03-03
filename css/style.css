@@ -34,7 +34,9 @@ textarea {
 
   /* || COLORS */
   --BGCOLOR-HERO: rgb(19, 18, 18);
-  --BGCOLOR-ENTERANCE: rgb(88, 44, 189);
+  --BGCOLOR-ENTERANCE: background-color: #FA8BFF;
+  
+  
   --FONT-COLOR: whitesmoke;
 
   /* || TEXT PADDING */
@@ -45,10 +47,11 @@ textarea {
 
 html {
   scroll-behavior: smooth;
-}
+  /* background-image: background-color: #A9C9FF; */
+  background-image: linear-gradient(to top, #30cfd0 0%,#330867 60%, #330867 100%);
+  
 
-body {
-  background-color: var(--BGCOLOR-ENTERANCE);
+  
 }
 
 p {
@@ -56,51 +59,11 @@ p {
 }
 
 /* || HERO */
-.custom-shape-divider-top-1677525270 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1677525270 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 114px;
-}
-
-.custom-shape-divider-top-1677525270 .shape-fill {
-  fill: #582cbd;
-}
-
-.custom-shape-divider-bottom-1677525421 {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1677525421 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 168px;
-}
-
-.custom-shape-divider-bottom-1677525421 .shape-fill {
-  fill: #582cbd;
-}
-
 .header {
   background-color: var(--BGCOLOR-HERO);
   margin: 1% 18%;
   border-radius: 25px;
-  box-shadow: 0.1px 0.1px 5px whitesmoke;
+  box-shadow: 0.1px 0.1px 5px rgb(119, 0, 255);
 }
 
 .icon {
@@ -112,6 +75,7 @@ p {
   color: var(--FONT-COLOR);
   font-weight: var(--FW-BOLD);
   position: relative;
+  box-shadow: 0.1px 0.1px 70px rgb(119, 0, 255);
 }
 
 .hero__h1 {
@@ -131,42 +95,20 @@ p {
 }
 
 .avatar {
-  max-width: 200px;
-  max-height: 200px;
-  margin: 2%;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 2% 2% 3%;
   display: inline-block;
 }
 
-.hero__background {
-  max-height: 300px;
-  max-width: 1000px;
-  display: block;
-  margin: 0 auto;
-}
-
 /* || ENTERANCE */
-.image-h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.cauldron {
-  max-width: 270px;
-  max-height: 250px;
-}
-
-.cauldron-right {
-  max-width: 270px;
-  max-height: 250px;
-}
 .enterance {
-  background-color: var(--BGCOLOR-ENTERANCE);
+  /* background-color: var(--BGCOLOR-ENTERANCE); */
   color: var(--FONT-COLOR);
 }
 
 .enterance__h2 {
-  padding: 4% 0 4% 0;
+  padding: 4% 0 1% 0;
   font-size: 2rem;
   font-family: var(--FF-Kanit);
   display: inline-block;
@@ -185,9 +127,6 @@ p {
 }
 
 /* || INFO TABLES */
-.info__tables {
-  background-color: var(--BGCOLOR-ENTERANCE);
-}
 
 .row {
   display: flex;
