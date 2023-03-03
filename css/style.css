@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;500&family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;500&family=Roboto:wght@300;400;500&display=swap");
 
 /* || RESET */
 *,
@@ -48,7 +48,7 @@ textarea {
 html {
   scroll-behavior: smooth;
   /* background-image: background-color: #A9C9FF; */
-  background-image: linear-gradient(to top, #30cfd0 0%,#330867 60%, #330867 100%);
+  background-image: linear-gradient(to top, /*rgb(19, 18, 18) 0%, rgb(19, 18, 18)15%,*/ #30cfd0 16%,#330867 60%, #330867 100%);
   
 
   
@@ -63,7 +63,7 @@ p {
   background-color: var(--BGCOLOR-HERO);
   margin: 1% 18%;
   border-radius: 25px;
-  box-shadow: 0.1px 0.1px 5px rgb(119, 0, 255);
+  box-shadow: 0.1px 0.1px 5px #5a0db9;
 }
 
 .icon {
@@ -71,7 +71,7 @@ p {
 }
 
 .hero {
-  background-color: var(--BGCOLOR-HERO);
+  background-image: linear-gradient(to top,#330867 0%, rgb(19, 18, 18) 5%, rgb(19, 18, 18) 90%, #330867 100%);
   color: var(--FONT-COLOR);
   font-weight: var(--FW-BOLD);
   position: relative;
@@ -103,7 +103,6 @@ p {
 
 /* || ENTERANCE */
 .enterance {
-  /* background-color: var(--BGCOLOR-ENTERANCE); */
   color: var(--FONT-COLOR);
 }
 
@@ -118,16 +117,16 @@ p {
 .about {
   font-size: 1.4rem;
   font-family: var(--FF-Roboto);
-  font-weight: var(--FW-LIGHT);
-  line-height: 2rem;
-}
-
-.about_fourth {
+  font-weight: 400;
+  line-height: 1.8rem;
   padding-bottom: 4%;
+  letter-spacing:-0.5px;
+  word-spacing: -1px;
+  padding-left: 34%;
+  padding-right: 34%;
 }
 
 /* || INFO TABLES */
-
 .row {
   display: flex;
 }
@@ -151,25 +150,26 @@ p {
   border-bottom-left-radius: 20px;
   background-color: var(--BGCOLOR-HERO);
   margin-right: 1px;
+  box-shadow: 0.1px 0.1px 5px #5a0db9;
 }
 
 .radius_second {
   background-color: var(--BGCOLOR-HERO);
   margin-right: 1px;
-  padding: 100px;
+  box-shadow: 0.1px 0.1px 5px #5a0db9;
 }
 
 .radius_third {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: var(--BGCOLOR-HERO);
-  padding: 100px;
+  box-shadow: 0.1px 0.1px 5px #5a0db9;
 }
 
 /* || First Column */
 
 .background__circle {
-  background-color: rgb(27, 235, 173);
+  background-color: rgb(211, 183, 255);
   border-radius: 50%;
   max-width: 100px;
   margin: 10% auto;
@@ -178,4 +178,17 @@ p {
 .first_column__image {
   width: 100px;
   height: 100px;
+  padding: 25px 15px;
+}
+
+.second_column__image {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.third_column__image {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
 }
