@@ -48,7 +48,7 @@ textarea {
 html {
   scroll-behavior: smooth;
   /* background-image: background-color: #A9C9FF; */
-  background-image: linear-gradient(to top, /*rgb(19, 18, 18) 0%, rgb(19, 18, 18)15%,*/ #30cfd0 16%,#330867 60%, #330867 100%);
+  background-image: linear-gradient(to top, rgb(19, 18, 18) 0%, #30cfd0 18%,#330867 70%, #330867 100%);
   
 
   
@@ -66,9 +66,20 @@ p {
   box-shadow: 0.1px 0.1px 5px #5a0db9;
 }
 
+.header__nav{
+  display: flex;
+}
+
+.space-top {
+  display: block;
+  margin-top: 150px;
+}
+
 .icon {
   margin: 1%;
 }
+
+
 
 .hero {
   background-image: linear-gradient(to top,#330867 0%, rgb(19, 18, 18) 5%, rgb(19, 18, 18) 90%, #330867 100%);
@@ -129,6 +140,7 @@ p {
 /* || INFO TABLES */
 .row {
   display: flex;
+  margin-bottom : 50px;
 }
 
 .space {
@@ -150,20 +162,20 @@ p {
   border-bottom-left-radius: 20px;
   background-color: var(--BGCOLOR-HERO);
   margin-right: 1px;
-  box-shadow: 0.1px 0.1px 5px #5a0db9;
+  box-shadow: 0.1px 0.1px 5px rgb(211, 183, 255);
 }
 
 .radius_second {
   background-color: var(--BGCOLOR-HERO);
   margin-right: 1px;
-  box-shadow: 0.1px 0.1px 5px #5a0db9;
+  box-shadow: 0.1px 0.1px 5px rgb(211, 183, 255);
 }
 
 .radius_third {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: var(--BGCOLOR-HERO);
-  box-shadow: 0.1px 0.1px 5px #5a0db9;
+  box-shadow: 0.1px 0.1px 5px rgb(211, 183, 255);
 }
 
 /* ||Column Images */
@@ -218,11 +230,89 @@ p {
   color: rgb(211, 183, 255);
 }
 
-/* || TABLE INFOS */
-.home-button {
-  width: 50px;
-  height: 50px;
-  margin: 30px 49%;
+/* || FOOTER */
+.footer {
+  background-image: linear-gradient(to bottom,#177575 0%, rgb(19, 18, 18) 15%, rgb(19, 18, 18)100% /* #30cfd0 */ );
+  padding-top: 10px;
 }
 
+.home-button {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.945);
+  border-radius: 100%;
+  border: 2px solid rgb(211, 183, 255);
+  margin: 30px;
+
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+}
+
+.mail-button {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.945);
+  border-radius: 100%;
+  border: 2px solid rgb(211, 183, 255);
+  margin: 30px;
+}
+
+.instagram-button {
+
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.945);
+  border-radius: 100%;
+  border: 2px solid rgb(211, 183, 255);
+  margin: 30px;
+}
+
+.twitter-button {
+
+  width: 60px;
+  height: 60px;
+  padding: 6px 3px 0;
+  background-color: rgba(0, 0, 0, 0.945);
+  border-radius: 100%;
+  border: 2px solid rgb(211, 183, 255);
+  margin: 30px;
+}
+
+.github {
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.945);
+  border-radius: 100%;
+  border: 2px solid rgb(211, 183, 255);
+  margin: 30px;
+
+}
+
+.linkedin {
+  width: 60px;
+  height: 60px;
+
+  background-color: rgba(0, 0, 0, 0.945);
+  border-radius: 100%;
+  border: 2px solid rgb(211, 183, 255);
+  margin: 30px;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.copyright-text {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  font-family: var(--FF-Roboto);
+}
 
