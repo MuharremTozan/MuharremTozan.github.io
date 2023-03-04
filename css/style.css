@@ -132,7 +132,7 @@ p {
 }
 
 .space {
-  padding: 0 12%;
+  padding: 0 150px;
 }
 
 .column {
@@ -166,10 +166,10 @@ p {
   box-shadow: 0.1px 0.1px 5px #5a0db9;
 }
 
-/* || First Column */
+/* ||Column Images */
 
 .background__circle {
-  background-color: rgb(211, 183, 255);
+  background-color: whitesmoke;
   border-radius: 50%;
   max-width: 100px;
   margin: 10% auto;
@@ -192,3 +192,37 @@ p {
   height: 100px;
   padding: 10px;
 }
+
+/* || TABLE INFOS */
+.padding-top {
+  padding-top: 30px;
+}
+
+.padding-firstlines {
+  padding: 30px 60px 0 60px;
+}
+
+.padding-purple {
+  padding-top: 40px;
+}
+
+.padding-less{
+  padding-top: 5px;
+}
+
+.padding-last {
+  padding-bottom: 30px;
+}
+
+.purple{
+  color: rgb(211, 183, 255);
+}
+
+/* || TABLE INFOS */
+.home-button {
+  width: 50px;
+  height: 50px;
+  margin: 30px 49%;
+}
+
+
