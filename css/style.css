@@ -72,14 +72,19 @@ p {
 
 .space-top {
   display: block;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 
 .icon {
   margin: 1%;
+  width: 100px;
+  height: 100px;
 }
 
-
+.language{
+  color: whitesmoke;
+  padding-top: 3%;
+}
 
 .hero {
   background-image: linear-gradient(to top,#330867 0%, rgb(19, 18, 18) 5%, rgb(19, 18, 18) 90%, #330867 100%);
@@ -230,6 +235,10 @@ p {
   color: rgb(211, 183, 255);
 }
 
+.frontend:before{
+  content:"Front-End Developer";
+}
+
 /* || FOOTER */
 .footer {
   background-image: linear-gradient(to bottom,#177575 0%, rgb(19, 18, 18) 15%, rgb(19, 18, 18)100% /* #30cfd0 */ );
@@ -318,27 +327,136 @@ p {
 
 /* || TABLET */
 @media screen and (min-width: 768px) and (max-width:992px){
-  .hero__h1{
-    padding: 0 80px;
+  .language{
+    padding-top: 5%;
   }
+  .header{
+    margin: 5%
+  }
+  .icon{
+    width: 100px;
+  }
+  .hero__h1{
+    padding: 3% 10%;
+    line-height: 100%;
+  }
+  /* baslıkta ıkı satır arası bosluk cok onu azalt */
   .hero__h3{
-    padding: 0 120px;
+    padding: 0 15%;
+  }
+  .enterance__h2{
+  padding-top: 3%;
   }
   .about{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .space{
-    padding: 10px;
+    padding: 1.5%;
+  }
+  .frontend:before{
+    content: "Front-End";
+  }
+  .padding-firstlines{
+    padding-left: 10% ;
+    padding-right: 10%;
   }
 }
 
 /* || PHONES */
 @media screen and (max-width: 768px){
+  .icon{
+    width: 50px;
+    height: 50px;
+    margin: 10%;
+  }
+  .language{
+    padding-top: 7%;
+  }
   .hero__h1{
     font-size: 2rem;
+    line-height: 120%;
+    padding-top: 10%;
+  }
+  .avatar{
+    margin: 10%;
   }
   .hero__h3{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding-left: 6%;
+    padding-right: 6%;
   }
+  .enterance__h2{
+    line-height: 40px;
+    font-size: 1.7rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 15px;
+    padding-top: 10%;
+  }
+  .about{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .space{
+    padding: 0%;
+  }
+  .radius_first{
+  margin: 0 3% 10px;
+  border-radius: 20px;
+  background-color: var(--BGCOLOR-HERO);
+  box-shadow: 0.1px 0.1px 5px rgb(211, 183, 255);
+  }
+  .radius_second{
+    margin: 0 3% 10px;
+    border-radius: 20px;
+    background-color: var(--BGCOLOR-HERO);
+    box-shadow: 0.1px 0.1px 5px rgb(211, 183, 255);
+    }
+  .radius_third{
+    margin: 0 3% 10px;
+    border-radius: 20px;
+    background-color: var(--BGCOLOR-HERO);
+    box-shadow: 0.1px 0.1px 5px rgb(211, 183, 255);
+  }
+  .home-button{
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    margin: 20px 7px 20px 3px;
+    }
+    .mail-button{
+      width: 55px;
+    height: 55px;
+    padding: 5px;
+    margin: 20px 7px 20px 3px;
+    }
+    .instagram-button{
+      width: 55px;
+    height: 55px;
+    padding: 5px;
+    margin: 20px 7px 20px 3px;
+    }
+    .twitter-button{
+      width: 55px;
+    height: 55px;
+    padding: 5px;
+    margin: 20px 7px 20px 3px;
+    }
+    .github{
+      width: 55px;
+    height: 55px;
+    padding: 5px;
+    margin: 20px 7px 20px 3px;
+    }
+    .linkedin{
+      width: 55px;
+    height: 55px;
+    padding: 5px;
+    margin: 20px 7px 20px 3px;
+    }
 }
