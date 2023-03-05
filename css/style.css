@@ -372,6 +372,10 @@ p {
     height: 50px;
     margin: 10%;
   }
+  .hero__h1{
+    padding: 0 7%;
+    line-height: 100%;
+  }
   .language{
     padding-top: 7%;
   }
